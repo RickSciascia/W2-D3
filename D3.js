@@ -240,6 +240,9 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
 console.log("Esercizio 9 - EXTRA");
+//for  (let i = 0; i < charactersNames.length; i++)
+//quindi if l array charactersNames === femaleCharacters
+//come paragono 2 array???
 
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
