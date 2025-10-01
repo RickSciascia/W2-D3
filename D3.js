@@ -155,7 +155,20 @@ console.log("Esercizio 5");
 for (let i = 0; i < starWarsCharacters.length; i++)
   switch (starWarsCharacters[i].eye_color) {
     case "blue":
-      eyeColor.blue.push(starWarsCharacters[i].name);
+      eyeColor.blue.push(starWarsCharacters[i]);
+      break;
+    case "yellow":
+      eyeColor.yellow.push(starWarsCharacters[i]);
+      break;
+    case "brown":
+      eyeColor.brown.push(starWarsCharacters[i]);
+      break;
+    case "red":
+      eyeColor.red.push(starWarsCharacters[i]);
+      break;
+    case "blue-gray":
+      eyeColor["blue-gray"].push(starWarsCharacters[i]);
+      break;
   }
 console.log(eyeColor);
 
