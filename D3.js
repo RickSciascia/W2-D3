@@ -152,7 +152,7 @@ console.log("eyeColor è ", eyeColor);
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
 console.log("Esercizio 5");
-for (let i = 0; i < starWarsCharacters.length; i++)
+for (let i = 0; i < starWarsCharacters.length; i++) {
   switch (starWarsCharacters[i].eye_color) {
     case "blue":
       eyeColor.blue.push(starWarsCharacters[i]);
@@ -170,6 +170,7 @@ for (let i = 0; i < starWarsCharacters.length; i++)
       eyeColor["blue-gray"].push(starWarsCharacters[i]);
       break;
   }
+}
 console.log(eyeColor);
 
 /* ESERCIZIO 6
@@ -197,11 +198,42 @@ console.log("a fine ciclo Il crewMass totale è ", crewMass);
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 console.log("Esercizio 7");
+const shipMass = crewMass;
+console.log("since Ship Mass is ", shipMass);
+if (shipMass < 500) {
+  console.log("Ship is under loaded");
+} else if (shipMass < 700) {
+  console.log("Ship is half loaded");
+} else if (shipMass < 900) {
+  console.log("Warning: Load is over 700");
+} else if (shipMass < 1000) {
+  console.log("Critical Load: Over 900");
+} else if (shipMass >= 1000) {
+  console.log("DANGER! OVERLOAD ALERT: escape from ship now!");
+}
 
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
 console.log("Esercizio 8");
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  console.log(
+    "il gender in esame del oggetto",
+    starWarsCharacters[i].name,
+    "è",
+    starWarsCharacters[i].gender
+  );
+  if (starWarsCharacters[i].gender === "n/a") {
+    starWarsCharacters[i].gender = "robot";
+    console.log(
+      "il gender in esame del oggetto",
+      starWarsCharacters[i].name,
+      "è ora",
+      starWarsCharacters[i].gender,
+      "quindi è stato sovrascritto"
+    );
+  }
+}
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
