@@ -242,7 +242,24 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 console.log("Esercizio 9 - EXTRA");
 //for  (let i = 0; i < charactersNames.length; i++)
 //quindi if l array charactersNames === femaleCharacters
-//come paragono 2 array???
+console.log(
+  "characterNames prima del ciclo",
+  characterNames,
+  "lunghezza: ",
+  characterNames.length
+);
+for (let i = 0; i < characterNames.length; i++) {
+  let j = 0;
+  if (characterNames[i] === femaleCharacters[j]) {
+    characterNames.splice(i, 1);
+  } else for (j = 1; j < femaleCharacters.length; j++) {}
+}
+console.log(
+  "characterNames dopo del ciclo",
+  characterNames,
+  "lunghezza: ",
+  characterNames.length
+);
 
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
